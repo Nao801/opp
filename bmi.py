@@ -21,9 +21,13 @@ class BMI:
         self.height = height
         self.weight = weight
 
+    def calculate_bmi(self):
+        return self.weight / (self.height ** 2)
+
 
 # BMIクラスのインスタンス化
 hibiki_bmi = BMI(height=1.80, weight=67.0)
 ohira_bmi = BMI(height=1.78, weight=75.0)
 
 print(hibiki_bmi.height, hibiki_bmi.weight)
+print(hibiki_bmi.calculate_bmi())
