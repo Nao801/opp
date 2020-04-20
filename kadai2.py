@@ -21,19 +21,14 @@ class Circle:
     def __init__(self, radius):
         self.radius = radius
 
-    def area(self):
+    def __str__(self):
         return f'{math.pi * (self.radius ** 2):.2f}'
-
-    def perimeter(self):
         return f'{math.pi * (self.radius * 2):.2f}'
 
-
 circle1 = Circle(radius=1)
-print(circle1.area())
-print(circle1.perimeter())
+print(circle1)
 circle3 = Circle(radius=3)
-print(circle3.area())
-print(circle3.perimeter())
+print(circle3)
 
 '''
 課題2:長方形オブジェクト
@@ -56,16 +51,11 @@ class Rectangle:
         self.height = height
         self.width = width
 
-    def area(self):
+    def __str__(self):
         return f'{self.height * self.width:.2f}'
-
-    def diagonal(self):
         return f'{math.sqrt(self.height ** 2 + self.width ** 2):.2f}'
 
-
 rectangle1 = Rectangle(height=5, width=6)
-print(rectangle1.area())
-print(rectangle1.diagonal())
+print(rectangle1)
 rectangle2 = Rectangle(height=3, width=3)
-print(rectangle2.area())
-print(rectangle2.diagonal())
+print(rectangle2)
