@@ -16,6 +16,7 @@ print(circle3.perimeter()) #18.85
 
 import math
 
+
 class Circle:
     def __init__(self, radius):
         self.radius = radius
@@ -48,9 +49,11 @@ rectangle2.area() #9.00
 rectangle2.diagonal() #4.24
 
 '''
+
+
 class Rectangle:
     def __init__(self, height, width):
-        self.height= height
+        self.height = height
         self.width = width
 
     def area(self):
@@ -58,6 +61,7 @@ class Rectangle:
 
     def diagonal(self):
         return f'{math.sqrt(self.height ** 2 + self.width ** 2):.2f}'
+
 
 rectangle1 = Rectangle(height=5, width=6)
 print(rectangle1.area())
